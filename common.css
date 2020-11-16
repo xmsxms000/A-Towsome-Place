@@ -1,0 +1,120 @@
+/* GLOBAL */
+:root {
+  /* color */
+  --color-dark: #191919;
+
+  --color-dark-gray: #55565a;
+
+  --color-white: #ffffff;
+
+  --color-light-white: #f5f5f5;
+
+  --color-light-white: #cccccc;
+
+  --color-red: #d5012a;
+
+  --color-footer-bg: #333333;
+}
+
+/* TYPOGRAPHY */
+html {
+  font-size: 20px;
+}
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color-dark);
+}
+.banner-tt {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 7px 0 14px;
+}
+.banner-sub-tt {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-red);
+}
+.banner-dec {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.7rem;
+  color: var(--color-dark-gray);
+}
+.content-tt {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.4rem;
+}
+
+/* LAOUT */
+.container {
+  width: 1320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* ELMENT */
+.hide {
+  position: fixed;
+  top: 0;
+  left: -9999em;
+  overflow: hidden;
+  visibility: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.top-bot-padding {
+  padding: 60px 0;
+}
+.plus-btn {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  background: var(--color-white);
+  transition: 0.5s;
+  color: var(--color-dark);
+  cursor: pointer;
+}
+.plus-btn:hover {
+  transform: rotate(180deg);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .banner-tt {
+    font-size: 1.4rem;
+  }
+  .banner-sub-tt {
+    font-size: 0.6rem;
+  }
+  .banner-dec {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .banner-tt {
+    font-size: 1rem;
+  }
+  .banner-sub-tt {
+    font-size: 0.6rem;
+  }
+  .banner-dec {
+    display: none;
+  }
+}
